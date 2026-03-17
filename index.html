@@ -9,695 +9,81 @@
 </head>
 <body>
 
-<!-- ===== NAVIGATION ===== -->
+<!-- NAV -->
 <nav>
   <a class="nav-logo" href="#" onclick="showPage('home')">
-    &lt;<span>Anass</span>.JAADAR&gt;
+    &lt;<span>Anass</span>.dev&gt;
   </a>
   <ul class="nav-links" id="nav-links">
-    <li><a href="#" onclick="showPage('home')"        data-page="home"        class="active">Accueil</a></li>
-    <li><a href="#" onclick="showPage('formation')"   data-page="formation">Formation</a></li>
-    <li><a href="#" onclick="showPage('experience')"  data-page="experience">Expériences</a></li>
-    <li><a href="#" onclick="showPage('competences')" data-page="competences">Compétences</a></li>
-    <li><a href="#" onclick="showPage('projets')"     data-page="projets">Projets</a></li>
-    <li><a href="#" onclick="showPage('veille')"      data-page="veille">Veille</a></li>
-    <li><a href="#" onclick="showPage('contact')"     data-page="contact">Contact</a></li>
+    <li><a href="#" onclick="showPage('home')" class="active">Accueil</a></li>
+    <li><a href="#" onclick="showPage('formation')">Formation</a></li>
+    <li><a href="#" onclick="showPage('experience')">Expériences</a></li>
+    <li><a href="#" onclick="showPage('competences')">Compétences</a></li>
+    <li><a href="#" onclick="showPage('projets')">Projets</a></li>
+    <li><a href="#" onclick="showPage('veille')">Veille</a></li>
+    <li><a href="#" onclick="showPage('contact')">Contact</a></li>
   </ul>
-  <div class="hamburger" id="hamburger" onclick="toggleMenu()">
-    <span></span><span></span><span></span>
-  </div>
 </nav>
 
-<!-- ===== PAGE: ACCUEIL ===== -->
+<!-- PAGE HOME -->
 <div class="page active" id="page-home">
-  <div class="hero">
-    <div class="hero-grid-bg"></div>
-    <div class="hero-glow"></div>
-    <div class="hero-glow2"></div>
-    <div class="hero-content">
-      <div class="hero-label">BTS SIO — Option SISR</div>
-      <h1 class="hero-name">
-        Bonjour, je suis<br>
-        <span class="highlight">Anass</span> <span class="highlight2">JAADAR</span>
-      </h1>
-      <p class="hero-role">
-        Étudiant en <span id="typed-role">Informatique &amp; Réseaux</span><span class="cursor"></span>
-      </p>
-      <p class="hero-desc">
-        Passionné par l'informatique, les systèmes et les réseaux, je suis actuellement étudiant en <strong>BTS SIO option SISR</strong>. Cette formation me permet de développer des compétences en administration systèmes, gestion des réseaux et sécurité informatique afin de construire mon avenir dans les métiers de l'infrastructure informatique.
-      </p>
-      <div class="hero-cta">
-        <button class="btn btn-primary" onclick="showPage('projets')">📁 Voir mes projets</button>
-        <button class="btn btn-outline" onclick="showPage('contact')">✉ Me contacter</button>
-      </div>
-      <div class="tech-pills">
-        <span class="pill">Linux</span>
-        <span class="pill">Windows Server</span>
-        <span class="pill">Cisco</span>
-        <span class="pill">Virtualisation</span>
-        <span class="pill">Cybersécurité</span>
-        <span class="pill">Python</span>
-        <span class="pill">Bash</span>
-      </div>
-    </div>
-    <div class="hero-visual">
-      <div class="avatar-ring">
-        <div class="avatar-inner">👨‍💻</div>
-      </div>
-    </div>
-  </div>
-
-  <div class="sep"></div>
-
-  <div class="section">
-    <div class="grid-3">
-      <div class="card fade-in" style="text-align:center">
-        <div style="font-size:2.5rem;margin-bottom:0.75rem">🎓</div>
-        <h3 style="font-size:1rem;font-weight:700;margin-bottom:0.5rem">Formation</h3>
-        <p style="font-size:0.825rem;color:var(--text-muted);line-height:1.6">BTS SIO option SISR, avec une spécialisation dans les infrastructures réseau et la sécurité.</p>
-      </div>
-      <div class="card fade-in" style="text-align:center">
-        <div style="font-size:2.5rem;margin-bottom:0.75rem">🛠️</div>
-        <h3 style="font-size:1rem;font-weight:700;margin-bottom:0.5rem">Projets</h3>
-        <p style="font-size:0.825rem;color:var(--text-muted);line-height:1.6">Mise en place d'infrastructures, configuration réseau, routage BGP</p>
-      </div>
-      <div class="card fade-in" style="text-align:center">
-        <div style="font-size:2.5rem;margin-bottom:0.75rem">🎯</div>
-        <h3 style="font-size:1rem;font-weight:700;margin-bottom:0.5rem">Objectifs</h3>
-        <p style="font-size:0.825rem;color:var(--text-muted);line-height:1.6">Devenir consultant en cybersécurité, puis évolué dan sles métier dans la cybersécurité.</p>
-      </div>
-    </div>
-  </div>
+  <h1 style="color:white;text-align:center;margin-top:100px;">
+    Bienvenue sur mon portfolio
+  </h1>
 </div>
 
-<!-- ===== PAGE: FORMATION ===== -->
+<!-- PAGE FORMATION -->
 <div class="page" id="page-formation">
-  <div class="section">
-    <div class="section-header">
-      <div class="section-number">// 01 — Formation</div>
-      <h2 class="section-title">BTS <span class="accent">SIO</span></h2>
-      <div class="section-line"></div>
-      <p class="section-subtitle">Services Informatiques aux Organisations — préparer les techniciens de demain à administrer et sécuriser les SI.</p>
-    </div>
-
-    <div class="formation-hero fade-in">
-      <div style="margin-bottom:1rem">
-        <span class="badge badge-accent">Bac +2</span>
-        <span class="badge badge-purple">Alternance</span>
-        <span class="badge badge-red">Option SISR</span>
-      </div>
-      <h3 style="font-size:1.3rem;font-weight:700;margin-bottom:0.75rem">BTS Services Informatiques aux Organisations</h3>
-      <p style="font-size:0.9rem;color:var(--text-muted);line-height:1.7;max-width:650px">
-        Le BTS SIO est un diplôme de niveau Bac+2 qui forme des techniciens capables de répondre aux besoins informatiques des organisations. Il se divise en deux options : <strong style="color:var(--accent)">SISR</strong> (Solutions d'Infrastructure, Systèmes et Réseaux) et <strong style="color:var(--accent2)">SLAM</strong> (Solutions Logicielles et Applications Métiers).
-      </p>
-    </div>
-
-    <div class="grid-2 fade-in" style="margin-bottom:2rem">
-      <div class="info-block">
-        <h3>🎯 Objectifs de la formation</h3>
-        <ul>
-          <li>Administrer et maintenir des infrastructures réseau</li>
-          <li>Garantir la disponibilité et la sécurité des SI</li>
-          <li>Gérer des serveurs et des postes de travail</li>
-          <li>Mettre en œuvre des solutions de virtualisation</li>
-          <li>Assister les utilisateurs et gérer les incidents</li>
-        </ul>
-      </div>
-      <div class="info-block">
-        <h3>⚡ Option SISR — Ma spécialisation</h3>
-        <p>L'option <strong style="color:var(--accent)">SISR</strong> est orientée vers les infrastructures réseau et systèmes. Elle forme des techniciens capables de concevoir, déployer et administrer des réseaux d'entreprise, des serveurs, et de gérer la sécurité des systèmes d'information.</p>
-      </div>
-    </div>
-
-    <h3 style="font-size:1.1rem;font-weight:700;margin-bottom:1rem">Domaines étudiés</h3>
-    <div class="domain-grid">
-      <div class="domain-card fade-in">
-        <div class="domain-icon">🌐</div>
-        <div>
-          <div class="domain-name">Réseaux</div>
-          <div class="domain-desc">TCP/IP, routage, switching, VLAN, VPN, protocoles réseau et architecture.</div>
-        </div>
-      </div>
-      <div class="domain-card fade-in">
-        <div class="domain-icon">🖥️</div>
-        <div>
-          <div class="domain-name">Systèmes</div>
-          <div class="domain-desc">Administration Linux & Windows Server, Active Directory, scripting Bash et PowerShell.</div>
-        </div>
-      </div>
-      <div class="domain-card fade-in">
-        <div class="domain-icon">📦</div>
-        <div>
-          <div class="domain-name">Virtualisation</div>
-          <div class="domain-desc">VMware, Proxmox, VirtualBox, conteneurisation Docker et infrastructures virtuelles.</div>
-        </div>
-      </div>
-      <div class="domain-card fade-in">
-        <div class="domain-icon">🔒</div>
-        <div>
-          <div class="domain-name">Cybersécurité</div>
-          <div class="domain-desc">Pare-feux, IDS/IPS, gestion des vulnérabilités, conformité et réponse aux incidents.</div>
-        </div>
-      </div>
-      <div class="domain-card fade-in">
-        <div class="domain-icon">☁️</div>
-        <div>
-          <div class="domain-name">Cloud & Services</div>
-          <div class="domain-desc">Services cloud, messagerie, annuaires, supervision et gestion des services réseau.</div>
-        </div>
-      </div>
-      <div class="domain-card fade-in">
-        <div class="domain-icon">💻</div>
-        <div>
-          <div class="domain-name">Développement</div>
-          <div class="domain-desc">Scripting Python, Bash, PowerShell et développement d'outils d'administration.</div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <h1 style="color:white;text-align:center;margin-top:100px;">
+    Formation
+  </h1>
 </div>
 
-<!-- ===== PAGE: EXPÉRIENCES ===== -->
+<!-- PAGE EXPERIENCE -->
 <div class="page" id="page-experience">
-  <div class="section">
-    <div class="section-header">
-      <div class="section-number">// 02 — Expériences</div>
-      <h2 class="section-title">Parcours <span class="accent">Pro & Stage</span></h2>
-      <div class="section-line"></div>
-      <p class="section-subtitle">Stages et expériences professionnelles réalisés dans le cadre de ma formation BTS SIO.</p>
-    </div>
-
-    <div class="timeline">
-      <div class="timeline-item fade-in">
-        <div class="exp-card">
-          <div class="exp-header">
-            <div>
-              <div class="exp-company">🏢 Préféctures du Val du Marne</div>
-              <div class="exp-role">Technicien Systèmes & Réseaux (DSI)</div>
-            </div>
-            <span class="exp-date">Mai – Juin 2025</span>
-          </div>
-          <ul class="exp-missions">
-            <li>Gestion des pannes d’imprimantes  </li>
-            <li>Installation de PC/postes et de visioconférence </li>
-            <li>Changement d'outils d'informatiques</li>
-            <li>Aménagement de bureau (décâblage/câblage)</li>
-            <li>Sauvegarde de PC et installation de postes et migrations vers Windows 11Découverte</li>
-          </ul>
-          <div class="tech-tags">
-            <span class="tech-tag">Windows Server 2022-2024</span>
-            <span class="tech-tag">RJ45</span>
-            <span class="tech-tag">PowerShell</span>
-            <span class="tech-tag">Scanner</span>
-            <span class="tech-tag">GLPI</span>
-          </div>
-          <div style="margin-top:1rem">
-            <a href="#" class="btn btn-outline" style="font-size:0.7rem;padding:0.4rem 0.9rem">🔗 Site de l'entreprise</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="timeline-item fade-in">
-        <div class="exp-card">
-          <div class="exp-header">
-            <div>
-              <div class="exp-company">🏥 CN2C</div>
-              <div class="exp-role">Technicien Sytèmes et réseaux </div>
-            </div>
-            <span class="exp-date">Janvier – Février 2026</span>
-          </div>
-          <ul class="exp-missions">
-            <li>Assistance aux utilisateurs sur les logiciels métiers (HIS, PACS)</li>
-            <li>Câblage réseau et brassage en baie de communication</li>
-            <li>Participation à la migration de postes vers Windows 11</li>
-            <li>Inventaire du parc informatique avec OCS Inventory</li>
-          </ul>
-          <div class="tech-tags">
-            <span class="tech-tag">Windows 10/11</span>
-            <span class="tech-tag">OCS Inventory</span>
-            <span class="tech-tag">Réseau RJ45</span>
-            <span class="tech-tag">ServiceNow</span>
-          </div>
-          <div style="margin-top:1rem">
-            <a href="#" class="btn btn-outline" style="font-size:0.7rem;padding:0.4rem 0.9rem">🔗 Site de l'entreprise</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div style="margin-top:1rem">
-      <a href="#" class="cv-download" download>
-        <span>📄</span> Télécharger mon CV en PDF
-      </a>
-    </div>
-  </div>
+  <h1 style="color:white;text-align:center;margin-top:100px;">
+    Expériences
+  </h1>
 </div>
 
-<!-- ===== PAGE: COMPÉTENCES ===== -->
+<!-- PAGE COMPETENCES -->
 <div class="page" id="page-competences">
-  <div class="section">
-    <div class="section-header">
-      <div class="section-number">// 03 — Compétences</div>
-      <h2 class="section-title">Mes <span class="accent">Skills</span></h2>
-      <div class="section-line"></div>
-    </div>
-
-    <div class="skills-container">
-      <div class="skills-group fade-in">
-        <div class="skills-group-title"><span></span> Systèmes & Infrastructure</div>
-        <div class="skill-item">
-          <div class="skill-top"><span class="skill-name">Linux (Debian/Ubuntu)</span><span class="skill-pct">80%</span></div>
-          <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
-        </div>
-        <div class="skill-item">
-          <div class="skill-top"><span class="skill-name">Windows Server</span><span class="skill-pct">75%</span></div>
-          <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
-        </div>
-        <div class="skill-item">
-          <div class="skill-top"><span class="skill-name">Active Directory</span><span class="skill-pct">70%</span></div>
-          <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
-        </div>
-        <div class="skill-item">
-          <div class="skill-top"><span class="skill-name">Virtualisation (VMware/Proxmox)</span><span class="skill-pct">65%</span></div>
-          <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
-        </div>
-        <div class="skill-item">
-          <div class="skill-top"><span class="skill-name">Docker & Conteneurs</span><span class="skill-pct">50%</span></div>
-          <div class="skill-bar"><div class="skill-fill" data-width="50"></div></div>
-        </div>
-      </div>
-
-      <div class="skills-group fade-in">
-        <div class="skills-group-title">
-          <span style="background:var(--accent2);box-shadow:0 0 8px var(--accent2)"></span> Réseaux & Sécurité
-        </div>
-        <div class="skill-item">
-          <div class="skill-top"><span class="skill-name">Réseaux TCP/IP</span><span class="skill-pct">80%</span></div>
-          <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
-        </div>
-        <div class="skill-item">
-          <div class="skill-top"><span class="skill-name">Cisco IOS (routage/switching)</span><span class="skill-pct">65%</span></div>
-          <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
-        </div>
-        <div class="skill-item">
-          <div class="skill-top"><span class="skill-name">Pare-feu & VPN</span><span class="skill-pct">60%</span></div>
-          <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
-        </div>
-        <div class="skill-item">
-          <div class="skill-top"><span class="skill-name">Cybersécurité</span><span class="skill-pct">55%</span></div>
-          <div class="skill-bar"><div class="skill-fill" data-width="55"></div></div>
-        </div>
-        <div class="skill-item">
-          <div class="skill-top"><span class="skill-name">Wireshark / Nmap</span><span class="skill-pct">60%</span></div>
-          <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
-        </div>
-      </div>
-
-      <div class="skills-group fade-in">
-        <div class="skills-group-title">
-          <span style="background:var(--accent3);box-shadow:0 0 8px var(--accent3)"></span> Développement & Scripting
-        </div>
-        <div class="skill-item">
-          <div class="skill-top"><span class="skill-name">Bash / Shell</span><span class="skill-pct">70%</span></div>
-          <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
-        </div>
-        <div class="skill-item">
-          <div class="skill-top"><span class="skill-name">PowerShell</span><span class="skill-pct">65%</span></div>
-          <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
-        </div>
-        <div class="skill-item">
-          <div class="skill-top"><span class="skill-name">Python</span><span class="skill-pct">55%</span></div>
-          <div class="skill-bar"><div class="skill-fill" data-width="55"></div></div>
-        </div>
-        <div class="skill-item">
-          <div class="skill-top"><span class="skill-name">HTML / CSS</span><span class="skill-pct">60%</span></div>
-          <div class="skill-bar"><div class="skill-fill" data-width="60"></div></div>
-        </div>
-        <div class="skill-item">
-          <div class="skill-top"><span class="skill-name">SQL</span><span class="skill-pct">50%</span></div>
-          <div class="skill-bar"><div class="skill-fill" data-width="50"></div></div>
-        </div>
-      </div>
-
-      <div class="skills-group fade-in">
-        <div class="skills-group-title">
-          <span style="background:#facc15;box-shadow:0 0 8px #facc15"></span> Compétences transversales
-        </div>
-        <div class="soft-skills">
-          <span class="soft-skill">🤝 Travail en équipe</span>
-          <span class="soft-skill">🧠 Autonomie</span>
-          <span class="soft-skill">🎯 Rigueur</span>
-          <span class="soft-skill">🔍 Analyse</span>
-          <span class="soft-skill">💬 Communication</span>
-          <span class="soft-skill">📅 Gestion du temps</span>
-          <span class="soft-skill">🔄 Adaptabilité</span>
-          <span class="soft-skill">📝 Documentation</span>
-          <span class="soft-skill">🚀 Curiosité</span>
-          <span class="soft-skill">🔧 Résolution de problèmes</span>
-        </div>
-      </div>
-    </div>
-  </div>
+  <h1 style="color:white;text-align:center;margin-top:100px;">
+    Compétences
+  </h1>
 </div>
 
-<!-- ===== PAGE: PROJETS ===== -->
+<!-- PAGE PROJETS -->
 <div class="page" id="page-projets">
-  <div class="section">
-    <div class="section-header">
-      <div class="section-number">// 04 — Projets</div>
-      <h2 class="section-title">Mes <span class="accent">Projets</span></h2>
-      <div class="section-line"></div>
-      <p class="section-subtitle">Projets réalisés pendant la formation ou en autonomie.</p>
-    </div>
-
-    <div class="grid-2">
-      <div class="project-card fade-in">
-        <div class="project-img" style="background:linear-gradient(135deg,#0f1923,#1a2a1a)">🌐</div>
-        <div class="project-body">
-          <div class="project-title">Infrastructure réseau d'entreprise</div>
-          <div style="margin-bottom:0.75rem">
-            <span class="badge badge-accent">SISR</span>
-            <span class="badge badge-purple">Réseau</span>
-          </div>
-          <p class="project-desc">Conception et déploiement d'une infrastructure réseau complète pour une PME fictive : routeurs, switchs managés, VLAN, DHCP, DNS et VPN site-à-site en environnement virtualisé Cisco Packet Tracer et GNS3.</p>
-          <div class="tech-tags" style="margin-bottom:0.75rem">
-            <span class="tech-tag">Cisco IOS</span>
-            <span class="tech-tag">GNS3</span>
-            <span class="tech-tag">VLAN</span>
-            <span class="tech-tag">OSPF</span>
-            <span class="tech-tag">IPsec VPN</span>
-          </div>
-          <div class="project-result">✅ Infrastructure fonctionnelle avec redondance et segmentation réseau complète.</div>
-        </div>
-      </div>
-
-      <div class="project-card fade-in">
-        <div class="project-img" style="background:linear-gradient(135deg,#1a1030,#0d1a2e)">🔒</div>
-        <div class="project-body">
-          <div class="project-title">Audit de sécurité & Hardening</div>
-          <div style="margin-bottom:0.75rem">
-            <span class="badge badge-red">Sécurité</span>
-            <span class="badge badge-purple">Linux</span>
-          </div>
-          <p class="project-desc">Audit de sécurité d'un serveur Linux Debian avec rapport des vulnérabilités, puis mise en œuvre des mesures de durcissement : fail2ban, UFW, SSH sécurisé, désactivation des services inutiles et mise à jour automatique.</p>
-          <div class="tech-tags" style="margin-bottom:0.75rem">
-            <span class="tech-tag">Debian</span>
-            <span class="tech-tag">Lynis</span>
-            <span class="tech-tag">fail2ban</span>
-            <span class="tech-tag">UFW</span>
-            <span class="tech-tag">OpenSSH</span>
-          </div>
-          <div class="project-result">✅ Score de sécurité Lynis amélioré de 42 à 78 points.</div>
-        </div>
-      </div>
-
-      <div class="project-card fade-in">
-        <div class="project-img" style="background:linear-gradient(135deg,#1a2010,#2a1010)">📦</div>
-        <div class="project-body">
-          <div class="project-title">Plateforme de supervision réseau</div>
-          <div style="margin-bottom:0.75rem">
-            <span class="badge badge-accent">Monitoring</span>
-            <span class="badge badge-purple">Docker</span>
-          </div>
-          <p class="project-desc">Déploiement d'une solution de supervision complète avec Grafana, Prometheus et Alertmanager, containerisée avec Docker Compose. Tableaux de bord personnalisés pour le suivi des métriques réseau et système en temps réel.</p>
-          <div class="tech-tags" style="margin-bottom:0.75rem">
-            <span class="tech-tag">Docker</span>
-            <span class="tech-tag">Grafana</span>
-            <span class="tech-tag">Prometheus</span>
-            <span class="tech-tag">SNMP</span>
-            <span class="tech-tag">Alertmanager</span>
-          </div>
-          <div class="project-result">✅ Supervision de 12 équipements avec alertes SMS en cas de panne.</div>
-        </div>
-      </div>
-
-      <div class="project-card fade-in">
-        <div class="project-img" style="background:linear-gradient(135deg,#101a2a,#201020)">🤖</div>
-        <div class="project-body">
-          <div class="project-title">Scripts d'automatisation admin</div>
-          <div style="margin-bottom:0.75rem">
-            <span class="badge badge-accent">Scripting</span>
-            <span class="badge badge-red">PowerShell</span>
-          </div>
-          <p class="project-desc">Développement d'une suite de scripts PowerShell et Bash pour automatiser la gestion des comptes Active Directory : création en masse, attribution de droits, génération de rapports hebdomadaires et nettoyage des comptes inactifs.</p>
-          <div class="tech-tags" style="margin-bottom:0.75rem">
-            <span class="tech-tag">PowerShell</span>
-            <span class="tech-tag">Active Directory</span>
-            <span class="tech-tag">Bash</span>
-            <span class="tech-tag">CSV/Excel</span>
-          </div>
-          <div class="project-result">✅ Réduction du temps de gestion des comptes de 3h à 15 minutes par semaine.</div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <h1 style="color:white;text-align:center;margin-top:100px;">
+    Projets
+  </h1>
 </div>
 
-<!-- ===== PAGE: VEILLE TECHNOLOGIQUE ===== -->
+<!-- PAGE VEILLE -->
 <div class="page" id="page-veille">
-  <div class="section">
-    <div class="section-header">
-      <div class="section-number">// 05 — Veille</div>
-      <h2 class="section-title">Veille <span class="accent">Techno</span></h2>
-      <div class="section-line"></div>
-      <p class="section-subtitle">Suivi des évolutions en cybersécurité et infrastructure réseau.</p>
-    </div>
-
-    <div class="veille-intro fade-in">
-      <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:1rem">
-        <span style="font-size:2rem">🔒</span>
-        <div>
-          <div style="font-weight:700;font-size:1.1rem">Thème : Cybersécurité & Zero Trust</div>
-          <div style="font-size:0.8rem;color:var(--text-muted)">Évolution sur les 2 dernières années</div>
-        </div>
-      </div>
-      <p style="font-size:0.875rem;color:var(--text-muted);line-height:1.7">
-        La cybersécurité est en constante évolution. L'architecture <strong style="color:var(--accent)">Zero Trust</strong> — "ne jamais faire confiance, toujours vérifier" — s'est imposée comme le nouveau paradigme face à l'explosion du télétravail et des environnements cloud hybrides. Je suis cette technologie depuis le début de ma formation.
-      </p>
-    </div>
-
-    <h3 style="font-weight:700;margin-bottom:1.5rem">Chronologie des évolutions</h3>
-
-    <div class="timeline-veille">
-      <div class="tv-item fade-in">
-        <div class="tv-year">2023 — Q1-Q2</div>
-        <div class="tv-title">Adoption massive du Zero Trust en entreprise</div>
-        <div class="tv-desc">Les entreprises accélèrent leur migration vers des architectures Zero Trust suite aux cyberattaques majeures. Le NIST publie la mise à jour SP 800-207. Les solutions SASE combinent réseau et sécurité dans le cloud.</div>
-      </div>
-      <div class="tv-item fade-in">
-        <div class="tv-year">2023 — Q3-Q4</div>
-        <div class="tv-title">IA générative dans la cybersécurité</div>
-        <div class="tv-desc">L'IA s'intègre dans les outils SIEM/SOAR : détection comportementale améliorée, automatisation de la réponse aux incidents. En parallèle, les cybercriminels exploitent aussi l'IA pour des attaques de phishing plus sophistiquées.</div>
-      </div>
-      <div class="tv-item fade-in">
-        <div class="tv-year">2024 — Q1-Q2</div>
-        <div class="tv-title">NIS2 et renforcement réglementaire en Europe</div>
-        <div class="tv-desc">La directive NIS2 entre en vigueur en Europe, étendant les obligations de cybersécurité à de nombreux secteurs. Les entreprises doivent renforcer leur gouvernance et leurs procédures de notification d'incidents.</div>
-      </div>
-      <div class="tv-item fade-in">
-        <div class="tv-year">2024 — Q3-Q4</div>
-        <div class="tv-title">Quantum-Safe cryptography</div>
-        <div class="tv-desc">Le NIST standardise les premiers algorithmes cryptographiques post-quantiques (CRYSTALS-Kyber, CRYSTALS-Dilithium). Les organisations commencent à planifier leur transition pour protéger leurs données.</div>
-      </div>
-      <div class="tv-item fade-in">
-        <div class="tv-year">2025 — Tendances actuelles</div>
-        <div class="tv-title">IA défensive et détection proactive</div>
-        <div class="tv-desc">Les plateformes XDR intégrant l'IA deviennent la norme. La sécurité des environnements cloud-native (Kubernetes, microservices) et la protection des identités (ITDR) sont les priorités des RSSI en 2025.</div>
-      </div>
-    </div>
-
-    <!-- RSS Section -->
-    <div class="rss-section fade-in">
-      <div class="rss-header">
-        <div class="rss-dot"></div>
-        <div>
-          <div class="rss-title">Actualités en temps réel</div>
-          <div class="rss-source">Flux RSS via rss2json.com — CERT-FR &amp; The Hacker News</div>
-        </div>
-      </div>
-      <div class="rss-topic-selector">
-        <button class="rss-topic-btn active" onclick="loadRSS('https://feeds.feedburner.com/TheHackersNews', this)">🌍 The Hacker News</button>
-        <button class="rss-topic-btn" onclick="loadRSS('https://www.cert.ssi.gouv.fr/feed/', this)">🇫🇷 CERT-FR</button>
-        <button class="rss-topic-btn" onclick="loadRSS('https://www.bleepingcomputer.com/feed/', this)">⚡ BleepingComputer</button>
-      </div>
-      <div id="rss-articles">
-        <div class="rss-loading">⏳ Chargement des actualités...</div>
-      </div>
-    </div>
-  </div>
+  <h1 style="color:white;text-align:center;margin-top:100px;">
+    Veille
+  </h1>
 </div>
 
-<!-- ===== PAGE: CONTACT ===== -->
+<!-- PAGE CONTACT -->
 <div class="page" id="page-contact">
-  <div class="section">
-    <div class="section-header">
-      <div class="section-number">// 06 — Contact</div>
-      <h2 class="section-title">Me <span class="accent">Contacter</span></h2>
-      <div class="section-line"></div>
-      <p class="section-subtitle">Une question, une opportunité de stage ? N'hésitez pas à m'envoyer un message.</p>
-    </div>
-
-    <div class="contact-layout">
-      <div class="contact-info">
-        <div class="contact-item fade-in">
-          <div class="contact-icon">📍</div>
-          <div>
-            <div class="contact-label">Localisation</div>
-            <div class="contact-value">Île-de-France, France</div>
-          </div>
-        </div>
-        <div class="contact-item fade-in">
-          <div class="contact-icon">🎓</div>
-          <div>
-            <div class="contact-label">Formation</div>
-            <div class="contact-value">BTS SIO — Option SISR</div>
-          </div>
-        </div>
-        <div class="contact-item fade-in">
-          <div class="contact-icon">💼</div>
-          <div>
-            <div class="contact-label">Disponibilité</div>
-            <div class="contact-value">En alternance — Disponible</div>
-          </div>
-        </div>
-        <div class="contact-item fade-in">
-          <div class="contact-icon">🔗</div>
-          <div>
-            <div class="contact-label">LinkedIn</div>
-            <div class="contact-value"><a href="#" style="color:var(--accent);text-decoration:none">/in/alex-martin</a></div>
-          </div>
-        </div>
-        <div class="contact-item fade-in">
-          <div class="contact-icon">💻</div>
-          <div>
-            <div class="contact-label">GitHub</div>
-            <div class="contact-value"><a href="#" style="color:var(--accent);text-decoration:none">github.com/alex-martin</a></div>
-          </div>
-        </div>
-        <div style="padding:1.25rem;background:rgba(0,229,255,0.05);border:1px solid rgba(0,229,255,0.15);border-radius:var(--radius)">
-          <div style="font-size:0.75rem;color:var(--text-muted);line-height:1.6">
-            🔐 <strong style="color:var(--text)">Confidentialité</strong><br>
-            Le formulaire ne collecte aucune donnée personnelle sensible. Votre message est utilisé uniquement pour vous répondre.
-          </div>
-        </div>
-      </div>
-
-      <div class="form fade-in">
-        <h3 style="font-size:1.1rem;font-weight:700;margin-bottom:1.5rem">Envoyer un message</h3>
-        <div class="form-group">
-          <label class="form-label">Sujet</label>
-          <input type="text" class="form-input" placeholder="Ex: Demande de stage, Question..." id="form-subject" />
-        </div>
-        <div class="form-group">
-          <label class="form-label">Moyen de réponse (email ou autre)</label>
-          <input type="text" class="form-input" placeholder="votre.email@exemple.com ou autre contact..." id="form-reply" />
-        </div>
-        <div class="form-group">
-          <label class="form-label">Votre message</label>
-          <textarea class="form-textarea" placeholder="Décrivez votre message, proposition, question..." id="form-message"></textarea>
-        </div>
-        <p class="form-note">
-          ℹ️ Ce formulaire est à usage démonstratif dans ce portfolio. Pour me contacter directement, privilégiez LinkedIn ou GitHub.
-        </p>
-        <button class="btn btn-primary" style="width:100%;justify-content:center" onclick="submitForm()">
-          ✉ Envoyer le message
-        </button>
-        <div class="form-success" id="form-success">
-          ✅ Message envoyé ! Je vous répondrai dans les plus brefs délais.
-        </div>
-      </div>
-    </div>
-  </div>
+  <h1 style="color:white;text-align:center;margin-top:100px;">
+    Contact
+  </h1>
 </div>
 
 <footer>
-  <p>© 2025 <span>Alex Martin</span> — Portfolio BTS SIO | Tous droits réservés</p>
-  <p style="margin-top:0.5rem;font-size:0.65rem">Développé en HTML / CSS / JS</p>
+  <p>© 2026 <span>Anass JAADAR</span> — Portfolio BTS SIO</p>
 </footer>
 
-<!-- ===== JAVASCRIPT ===== -->
 <script>
-  function showPage(id) {
-    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-    document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
-    document.getElementById('page-' + id).classList.add('active');
-    document.querySelector('[data-page="' + id + '"]').classList.add('active');
-    document.getElementById('nav-links').classList.remove('open');
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-    setTimeout(animateFadeIns, 100);
-    if (id === 'competences') setTimeout(animateSkillBars, 300);
-    if (id === 'veille') loadRSS('https://feeds.feedburner.com/TheHackersNews', null);
-  }
-
-  function toggleMenu() {
-    document.getElementById('nav-links').classList.toggle('open');
-  }
-
-  function animateFadeIns() {
-    document.querySelectorAll('.page.active .fade-in').forEach((el, i) => {
-      setTimeout(() => el.classList.add('visible'), i * 80);
-    });
-  }
-
-  function animateSkillBars() {
-    document.querySelectorAll('.skill-fill').forEach(bar => {
-      bar.style.width = bar.getAttribute('data-width') + '%';
-    });
-  }
-
-  function submitForm() {
-    const message = document.getElementById('form-message').value.trim();
-    if (!message) { alert('Veuillez écrire un message.'); return; }
-    document.getElementById('form-success').style.display = 'block';
-    document.getElementById('form-subject').value = '';
-    document.getElementById('form-reply').value = '';
-    document.getElementById('form-message').value = '';
-  }
-
-  async function loadRSS(feedUrl, btn) {
-    if (btn) {
-      document.querySelectorAll('.rss-topic-btn').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-    }
-    const container = document.getElementById('rss-articles');
-    container.innerHTML = '<div class="rss-loading">⏳ Chargement des actualités...</div>';
-    const apiUrl = 'https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent(feedUrl) + '&count=6';
-    try {
-      const res  = await fetch(apiUrl);
-      const data = await res.json();
-      if (data.status !== 'ok' || !data.items || data.items.length === 0) {
-        container.innerHTML = fallbackArticles(); return;
-      }
-      container.innerHTML = data.items.map(item => {
-        const date = item.pubDate
-          ? new Date(item.pubDate).toLocaleDateString('fr-FR', { day:'numeric', month:'long', year:'numeric' })
-          : '';
-        return '<div class="rss-article"><a href="' + item.link + '" target="_blank" rel="noopener">' + item.title + '</a><span class="rss-article-date">📅 ' + date + '</span></div>';
-      }).join('');
-    } catch (e) {
-      container.innerHTML = fallbackArticles();
-    }
-  }
-
-  function fallbackArticles() {
-    const list = [
-      { title: "Zero Trust : adoption mondiale dans les PME en 2025",              date: "8 mars 2025" },
-      { title: "NIS2 : bilan 6 mois après la transposition en droit français",     date: "5 mars 2025" },
-      { title: "Ransomware : les nouvelles techniques d'extorsion en 2025",         date: "3 mars 2025" },
-      { title: "Cryptographie post-quantique : les entreprises préparent leur migration", date: "28 fév. 2025" },
-      { title: "XDR et IA : la nouvelle génération d'outils de détection",         date: "22 fév. 2025" },
-      { title: "CERT-FR : alerte sur les vulnérabilités critiques dans les équipements réseau", date: "18 fév. 2025" },
-    ];
-    return list.map(a =>
-      '<div class="rss-article"><a href="#">' + a.title + '</a><span class="rss-article-date">📅 ' + a.date + '</span></div>'
-    ).join('');
-  }
-
-  window.addEventListener('load', animateFadeIns);
-
-  document.querySelectorAll('.nav-links a').forEach(a => {
-    a.addEventListener('click', e => e.preventDefault());
-  });
+function showPage(id) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.getElementById('page-' + id).classList.add('active');
+}
 </script>
+
 </body>
 </html>
